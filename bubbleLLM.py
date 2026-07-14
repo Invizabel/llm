@@ -56,7 +56,7 @@ def Test():
 
     values = [x[0] for x in data]
     weights = [x[1] for x in data]
-    result = random.choices(values, weights = weights, k = 1024)
+    result = random.choices(values, weights = weights, k = 2**8)
 
     for i in result:
         print("".join(i), end = "", flush = True)

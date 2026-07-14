@@ -48,6 +48,7 @@ def Train():
             file.write(f"{i}\n")
 
 def Test():
+    # Todo: get next token in sequene accurately based on grouping and chance! :)
     data = []
     with open("model.txt") as file:
         for line in file:

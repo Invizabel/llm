@@ -58,9 +58,7 @@ def Test():
     weights = [x[1] for x in data]
     result = random.choices(values, weights = weights, k = 1024)
 
-    import time
     for i in result:
-        time.sleep(0.1)
         print("".join(i), end = "", flush = True)
 
 Test()
